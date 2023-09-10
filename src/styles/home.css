@@ -1,0 +1,40 @@
+.heroSection
+{
+    background: rgb(175, 175, 175);
+}
+
+.heroContent h2
+{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.heroContent p
+{
+    color: var(--primary-color);
+    line-height: 28px;
+}
+.heroSection p:nth-child(1)
+{
+    font-weight: 500;
+}
+
+.buyBtn
+{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.heroContent
+{
+    padding-top: 45px;
+}

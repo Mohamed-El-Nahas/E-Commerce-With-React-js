@@ -1,0 +1,158 @@
+.header
+{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--primary-color);
+}
+
+.mynavwrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.logo img
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo h1
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    transition: ease 0.3s ;
+}
+.logo h1:hover
+{
+    color: grey;
+}
+
+.menu
+{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+
+.mynavitem a
+{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.mynavitem a:hover
+{
+    color: grey;
+}
+
+.mynavicons
+{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.mynavicons span i
+{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.mynavicons span i:hover
+{
+    color: grey;
+}
+
+.badge
+{
+    position: relative;
+    top: 25%;
+    right: -8%;
+    width: 18px;
+    height: 18px;
+    content: "";
+    /* background: red; */
+    color: #fff;
+    border-radius: 50px;
+    
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.mymobilemenu
+{
+    font-size: 1.3rem;
+    color: white;
+    display: none;
+}
+
+.mynavactive
+{
+    font-weight: 1000 !important;
+}
+
+.stickyheader
+{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.53);
+        z-index: 9999;
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: var(--primary-color);
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .active-menu 
+    {
+        display: block;
+    }
+    
+    .mymobilemenu
+    {
+        display: block;
+    }
+}
