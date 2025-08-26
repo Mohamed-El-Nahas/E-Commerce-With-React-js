@@ -59,5 +59,3 @@ npm start
 
 
 Link : https://e-commerce-with-react-js-woad.vercel.app/home
-- Add **Admin Dashboard** to manage products.  
-- Enhance UI using Tailwind/MUI.  
